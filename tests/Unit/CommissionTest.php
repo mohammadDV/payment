@@ -100,7 +100,7 @@ class CommissionTest extends TestCase
 
         $com_model->set_currencies($this->currencies);
         $result = $com_model->process($data);
-        $this->assertEquals($result,[0,2.5,29.78,6.17]);
+        $this->assertEquals($result,[0,0,0,0.3,0.3]);
 
     }
 }
