@@ -71,7 +71,9 @@ class CommissionService {
                 $amount                     = $this->convert(floatval($item["amount"]),$item["currency"]);
                 $uniq                       = $item["user_id"] . "_" . date("oW", strtotime($item["date"]));
                 $this->week_amount[$uniq]   = !empty($this->week_amount[$uniq]) ? $this->week_amount[$uniq] + $amount : $amount;
-                $this->week_count[$uniq]    = !empty($this->week_count[$uniq]) ? $this->week_count[$uniq]++ : 1;
+                $this->week_count[$uniq]    = !empty($this->week_count[$uniq]) ? $this->week_count[$uniq] + 1 : 1;
+
+                var_dump($this->week_count[$uniq]);
                 if ($this->week_amount[$uniq] <= $this->max_amount && $this->week_count[$uniq] <= $this->max_count){
                     $cmn = 0;
                 }elseif($this->week_count[$uniq] <= $this->max_count){

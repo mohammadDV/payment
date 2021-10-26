@@ -64,34 +64,38 @@ class CommissionTest extends TestCase
                 "op_type"   => "withdraw",
                 "user_id"   => "1",
                 "user_type" => "private",
-                "amount"    => "120000.00",
-                "date"      => "2020-12-15",
-                "currency"  => "JPY"
-            ],
-            [
-                "op_type"   => "withdraw",
-                "user_id"   => "1",
-                "user_type" => "business",
-                "amount"    => "500.00",
-                "date"      => "2020-12-16",
-                "currency"  => "USD"
-            ],
-            [
+                "amount"    => "100.00",
+                "date"      => "2014-12-31",
+                "currency"  => "EUR"
+            ],[
                 "op_type"   => "withdraw",
                 "user_id"   => "1",
                 "user_type" => "private",
-                "amount"    => "10000.00",
-                "date"      => "2020-12-17",
+                "amount"    => "100.00",
+                "date"      => "2014-12-31",
                 "currency"  => "EUR"
-            ],
-            [
+            ],[
                 "op_type"   => "withdraw",
                 "user_id"   => "1",
-                "user_type" => "business",
-                "amount"    => "1234.00",
-                "date"      => "2020-12-14",
-                "currency"  => "USD"
-            ]
+                "user_type" => "private",
+                "amount"    => "100.00",
+                "date"      => "2014-12-31",
+                "currency"  => "EUR"
+            ],[
+                "op_type"   => "withdraw",
+                "user_id"   => "1",
+                "user_type" => "private",
+                "amount"    => "100.00",
+                "date"      => "2014-12-31",
+                "currency"  => "EUR"
+            ],[
+                "op_type"   => "withdraw",
+                "user_id"   => "1",
+                "user_type" => "private",
+                "amount"    => "100.00",
+                "date"      => "2014-12-31",
+                "currency"  => "EUR"
+            ],
         );
 
         $com_model->set_currencies($this->currencies);
